@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["common/*"],
+      "rosing-core-server": ["../typings/core/server/core.server.d.ts"],
+      "rosing-core-client": ["../typings/core/client/core.client.d.ts"]
+    },
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "jsx": "react"
+  },
+  "include": [
+    "common/**/*"
+  ],
+  "files": [
+    "client/client.ts",
+    "server/server.ts"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.43.0",
+  "hash": "77dea5421ca7bbcc05fb",
+  "publicPath": "public/",
+  "outputPath": "/Users/andrejborha/projects/rosing-core/lib/rosing-core-client",
+  "assetsByChunkName": {
+    "components-block-block": "chunks/components-block-block.js",
+    "components-list-list": "chunks/components-list-list.js",
+    "main": "index.js"
+  },
+  "assets": [
+    {
+      "name": "chunks/components-block-block.js",
+      "size": 978,
+      "chunks": [
+        "components-block-block"
+      ],
+      "chunkNames": [
+        "components-block-block"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "chunks/components-list-list.js",
+      "size": 964,
+      "chunks": [
+        "components-list-list"
+      ],
+      "chunkNames": [
+        "components-list-list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "index.js",
+      "size": 1010363,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "index.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "index.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-list-list": {
+      "chunks": [
+        "components-list-list"
+      ],
+      "assets": [
+        "chunks/components-list-list.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-block-block": {
+      "chunks": [
+        "components-block-block"
+      ],
+      "assets": [
+        "chunks/components-block-block.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}

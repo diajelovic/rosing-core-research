@@ -1,0 +1,51 @@
+{
+  "name": "rosing-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-core": "yarn rimraf lib && webpack --config src/core/core.webpack.config.js && yarn build-core-d.ts",
+    "build-core-d.ts": "yarn rimraf typings && tsc --emitDeclarationOnly -d -p src/core/tsconfig.json",
+    "build": "yarn rimraf build && yarn build-client && yarn build-server",
+    "build-client": "webpack --config src/client/client.webpack.config.js",
+    "build-server": "webpack --config src/server/server.webpack.config.js",
+    "server": "nodemon build/server/index.js",
+    "client-dev": "webpack-dev-server --config src/client/client.webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@loadable/babel-plugin": "^5.12.0",
+    "@loadable/webpack-plugin": "^5.12.0",
+    "@types/express": "^4.17.6",
+    "@types/loadable__component": "^5.10.0",
+    "@types/loadable__server": "^5.12.2",
+    "@types/lodash": "^4.14.155",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-stats-plugin": "^0.3.1"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.12.0",
+    "@loadable/server": "^5.12.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

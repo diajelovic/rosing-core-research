@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["../common/*"]
+    },
+    "module": "esnext",
+    "esModuleInterop": true,
+    "target": "ES5",
+    "outDir": "../../typings",
+    "jsx": "react",
+    "moduleResolution": "Node"
+  },
+  "files": [
+    "client/core.client.tsx",
+    "server/core.server.tsx"
+  ]
+}

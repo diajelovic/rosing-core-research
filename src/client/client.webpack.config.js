@@ -30,6 +30,7 @@ module.exports = {
         __dirname,
         "../../lib/rosing-core-client"
       ),
+      custom: path.resolve(__dirname, "../../src/custom"),
     },
   },
   plugins: [

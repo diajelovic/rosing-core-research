@@ -1,3 +1,5 @@
 import { client } from "rosing-core-client";
 
-client({ name: "HELLO!!", haveBlock: true }, "app");
+import customization from "custom";
+
+client(customization, "app");

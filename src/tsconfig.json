@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "*": ["common/*"],
+      "custom": ["custom"],
       "rosing-core-server": ["../typings/core/server/core.server.d.ts"],
       "rosing-core-client": ["../typings/core/client/core.client.d.ts"]
     },

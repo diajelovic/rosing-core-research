@@ -30,7 +30,10 @@
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5",
@@ -43,6 +46,7 @@
   "dependencies": {
     "@loadable/component": "^5.12.0",
     "@loadable/server": "^5.12.0",
+    "deepmerge": "^4.2.2",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "react": "^16.13.1",

@@ -16,6 +16,9 @@ module.exports = {
   mode: "development",
   devtool: false,
   target: "node",
+  node: {
+    __dirname: true, // enable in node
+  },
   externals: ["@loadable/component", nodeExternals()],
   module: {
     rules: [
@@ -26,6 +29,23 @@ module.exports = {
           loader: "babel-loader",
           options: babelConfig,
         },
+      },
+      {
+        test: /\.module\.css$/i,
+        exclude: /node_modules/,
+        loader: "css-loader",
+        options: {
+          import: false,
+          modules: {
+            localIdentName: "[local]--[hash:base64:5]",
+          },
+          onlyLocals: true,
+        },
+      },
+      {
+        test: /\.(jpg|woff|woff2)$/,
+        exclude: /node_modules/,
+        use: { loader: "file-loader" },
       },
     ],
   },

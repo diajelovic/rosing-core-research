@@ -2,23 +2,55 @@
   "errors": [],
   "warnings": [],
   "version": "4.43.0",
-  "hash": "77dea5421ca7bbcc05fb",
-  "publicPath": "public/",
+  "hash": "a8d2d8d16ed3380da436",
+  "publicPath": "/public/",
   "outputPath": "/Users/andrejborha/projects/rosing-core/lib/rosing-core-client",
   "assetsByChunkName": {
-    "components-block-block": "chunks/components-block-block.js",
+    "components-block-block": [
+      "css/components-block-block.css",
+      "chunks/components-block-block.js"
+    ],
+    "components-footer-footer": "chunks/components-footer-footer.js",
     "components-list-list": "chunks/components-list-list.js",
     "main": "index.js"
   },
   "assets": [
     {
+      "name": "assets/Roboto-Regular.woff",
+      "size": 93388,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/Roboto-Regular.woff2",
+      "size": 65916,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "chunks/components-block-block.js",
-      "size": 978,
+      "size": 1816,
       "chunks": [
         "components-block-block"
       ],
       "chunkNames": [
         "components-block-block"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "chunks/components-footer-footer.js",
+      "size": 1000,
+      "chunks": [
+        "components-footer-footer"
+      ],
+      "chunkNames": [
+        "components-footer-footer"
       ],
       "info": {},
       "emitted": false
@@ -36,8 +68,20 @@
       "emitted": false
     },
     {
+      "name": "css/components-block-block.css",
+      "size": 332,
+      "chunks": [
+        "components-block-block"
+      ],
+      "chunkNames": [
+        "components-block-block"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "index.js",
-      "size": 1010363,
+      "size": 1014410,
       "chunks": [
         "main"
       ],
@@ -87,7 +131,18 @@
         "components-block-block"
       ],
       "assets": [
+        "css/components-block-block.css",
         "chunks/components-block-block.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-footer-footer": {
+      "chunks": [
+        "components-footer-footer"
+      ],
+      "assets": [
+        "chunks/components-footer-footer.js"
       ],
       "children": {},
       "childAssets": {}
@@ -100,5 +155,48 @@
       "debug": false
     }
   },
-  "children": []
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/public/",
+      "outputPath": "/Users/andrejborha/projects/rosing-core/lib/rosing-core-client",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/common/components/block/styles.module.css"
+    }
+  ]
 }

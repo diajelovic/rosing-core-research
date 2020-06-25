@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(/public/assets/Roboto-Regular.woff2) format('woff2'),
+    url(/public/assets/Roboto-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.block--3RWTI {
+    color: Green;
+    height: 50px;
+    font-family: 'Roboto', serif;
+}
+

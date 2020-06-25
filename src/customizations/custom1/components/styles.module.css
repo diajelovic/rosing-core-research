@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Piedra';
+    src: url('Piedra-Regular.woff2') format('woff2'),
+        url('Piedra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    background: red;
+    font-family: 'Piedra', serif;
+}

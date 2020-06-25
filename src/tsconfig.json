@@ -12,7 +12,9 @@
     "jsx": "react"
   },
   "include": [
-    "common/**/*"
+    "common/**/*",
+    "custom/*",
+    "customizations/**/*"
   ],
   "files": [
     "client/client.ts",

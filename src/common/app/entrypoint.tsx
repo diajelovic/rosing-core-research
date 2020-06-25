@@ -5,17 +5,24 @@ import { useCustomization } from "utils/customization.context";
 
 const List = loadable(() => import("../components/list/list"));
 const Block = loadable(() => import("../components/block/block"));
+const Footer = loadable(() => import("../components/footer/footer"));
 
 export const App = () => {
-  const { name, haveBlock } = useCustomization();
+  const { name, haveBlock, components } = useCustomization();
+  const CustomHeader = components?.header;
+  const CustomFooter = components?.footer;
 
   return (
     <div>
+      {CustomHeader && <CustomHeader />}
       {name}
-      {/*<React.Suspense fallback={<div>Loading...</div>}>*/}
       <List fallback={<div>Loading...</div>} />
       {haveBlock && <Block fallback={<div>Loading...</div>} />}
-      {/*</React.Suspense>*/}
+      {CustomFooter ? (
+        <CustomFooter />
+      ) : (
+        <Footer fallback={<div>Loading...</div>} />
+      )}
     </div>
   );
 };

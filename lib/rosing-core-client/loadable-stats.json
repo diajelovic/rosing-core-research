@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.43.0",
-  "hash": "a8d2d8d16ed3380da436",
+  "hash": "6548507c830db7e59181",
   "publicPath": "/public/",
   "outputPath": "/Users/andrejborha/projects/rosing-core/lib/rosing-core-client",
   "assetsByChunkName": {
@@ -11,6 +11,11 @@
       "chunks/components-block-block.js"
     ],
     "components-footer-footer": "chunks/components-footer-footer.js",
+    "components-image-background-image-background": [
+      "css/components-image-background-image-background.css",
+      "chunks/components-image-background-image-background.js"
+    ],
+    "components-image-image": "chunks/components-image-image.js",
     "components-list-list": "chunks/components-list-list.js",
     "main": "index.js"
   },
@@ -26,6 +31,22 @@
     {
       "name": "assets/Roboto-Regular.woff2",
       "size": 65916,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/back.jpg",
+      "size": 124494,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/red.jpg",
+      "size": 295502,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -56,6 +77,30 @@
       "emitted": false
     },
     {
+      "name": "chunks/components-image-background-image-background.js",
+      "size": 2114,
+      "chunks": [
+        "components-image-background-image-background"
+      ],
+      "chunkNames": [
+        "components-image-background-image-background"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "chunks/components-image-image.js",
+      "size": 2237,
+      "chunks": [
+        "components-image-image"
+      ],
+      "chunkNames": [
+        "components-image-image"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "chunks/components-list-list.js",
       "size": 964,
       "chunks": [
@@ -80,8 +125,20 @@
       "emitted": false
     },
     {
+      "name": "css/components-image-background-image-background.css",
+      "size": 116,
+      "chunks": [
+        "components-image-background-image-background"
+      ],
+      "chunkNames": [
+        "components-image-background-image-background"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "index.js",
-      "size": 1014410,
+      "size": 1018077,
       "chunks": [
         "main"
       ],
@@ -146,6 +203,27 @@
       ],
       "children": {},
       "childAssets": {}
+    },
+    "components-image-image": {
+      "chunks": [
+        "components-image-image"
+      ],
+      "assets": [
+        "chunks/components-image-image.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-image-background-image-background": {
+      "chunks": [
+        "components-image-background-image-background"
+      ],
+      "assets": [
+        "css/components-image-background-image-background.css",
+        "chunks/components-image-background-image-background.js"
+      ],
+      "children": {},
+      "childAssets": {}
     }
   },
   "logging": {
@@ -197,6 +275,48 @@
       },
       "children": [],
       "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/common/components/block/styles.module.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/public/",
+      "outputPath": "/Users/andrejborha/projects/rosing-core/lib/rosing-core-client",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!src/common/components/image-background/styles.module.css"
     }
   ]
 }

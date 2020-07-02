@@ -9,11 +9,13 @@
     },
     "esModuleInterop": true,
     "noImplicitAny": true,
+//    "typeRoots": ["node_modules/@types", "./typings"],
     "jsx": "react"
   },
   "include": [
     "common/**/*",
     "custom/*",
+    "typings/*",
     "customizations/**/*"
   ],
   "files": [

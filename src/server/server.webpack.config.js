@@ -43,6 +43,7 @@ module.exports = {
   devtool: false,
   output: {
     path: path.resolve(__dirname, "../../build/server"),
+    publicPath: "/public/",
     filename: "index.js",
   },
   target: "node", // in order to ignore built-in modules like path, fs, etc.

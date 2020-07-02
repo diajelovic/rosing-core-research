@@ -11,6 +11,9 @@
     "jsx": "react",
     "moduleResolution": "Node"
   },
+  "include": [
+    "../typings/*"
+  ],
   "files": [
     "client/core.client.tsx",
     "server/core.server.tsx"

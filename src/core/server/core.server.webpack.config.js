@@ -9,6 +9,7 @@ module.exports = {
   output: {
     chunkFilename: "chunks/[name].js",
     path: path.resolve(__dirname, "../../../lib/rosing-core-server"),
+    publicPath: "/public/",
     filename: "index.js",
     library: "default",
     libraryTarget: "commonjs2",
@@ -45,7 +46,12 @@ module.exports = {
       {
         test: /\.(jpg|woff|woff2)$/,
         exclude: /node_modules/,
-        use: { loader: "file-loader" },
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "assets/[name].[ext]",
+          },
+        },
       },
     ],
   },

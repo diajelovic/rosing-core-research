@@ -11,3 +11,9 @@
     background: red;
     font-family: 'Piedra', serif;
 }
+
+.image {
+    width: 100px;
+    height: 200px;
+    background: url("./yellow.jpeg");
+}

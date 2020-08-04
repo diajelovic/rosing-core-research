@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "../..",
     "paths": {
-      "*": ["../common/*"]
+      "common/*": ["src/core/common/*"]
     },
     "module": "esnext",
     "esModuleInterop": true,
     "target": "ES5",
-    "outDir": "../../typings",
+    "outDir": "../../build/typings",
     "jsx": "react",
     "moduleResolution": "Node"
   },

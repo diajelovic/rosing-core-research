@@ -2,19 +2,18 @@ const path = require("path");
 const LoadablePlugin = require("@loadable/webpack-plugin");
 const nodeExternals = require("webpack-node-externals");
 
-const babelConfig = require("./core.server.babel.config.json");
-
-module.exports = {
+module.exports = (isDev) => ({
   entry: "./src/core/server/core.server",
   output: {
     chunkFilename: "chunks/[name].js",
-    path: path.resolve(__dirname, "../../../lib/rosing-core-server"),
+    path: path.resolve(__dirname, "../../../build/rosing-core-server"),
     publicPath: "/public/",
     filename: "index.js",
     library: "default",
     libraryTarget: "commonjs2",
   },
-  mode: "development",
+  mode: isDev ? "development" : "production",
+  watch: isDev,
   devtool: false,
   target: "node",
   node: {
@@ -28,7 +27,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: babelConfig,
         },
       },
       {
@@ -58,10 +56,8 @@ module.exports = {
   resolve: {
     extensions: [".js", ".ts", ".tsx"],
     alias: {
-      app: path.resolve(__dirname, "../../common/app"),
-      utils: path.resolve(__dirname, "../../common/utils"),
-      components: path.resolve(__dirname, "../../common/components"),
+      common: path.resolve(__dirname, "../common"),
     },
   },
   plugins: [new LoadablePlugin()],
-};
+});

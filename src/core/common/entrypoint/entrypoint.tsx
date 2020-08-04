@@ -1,7 +1,7 @@
 import * as React from "react";
 import loadable from "@loadable/component";
 
-import { useCustomization } from "utils/customization.context";
+import { useCustomization } from "common/utils/customization.context";
 
 const List = loadable(() => import("../components/list/list"));
 const Block = loadable(() => import("../components/block/block"));
@@ -20,6 +20,7 @@ export const App = () => {
   return (
     <div>
       {CustomHeader && <CustomHeader />}
+      {"he0!"}
       {name}
       <List fallback={<div>Loading...</div>} />
       {haveBlock && <Block fallback={<div>Loading...</div>} />}

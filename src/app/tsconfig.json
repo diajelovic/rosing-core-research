@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../..",
+    "paths": {
+      "common/*": ["src/core/common/*"],
+      "custom": ["src/app/custom"],
+      "rosing-core-server": ["build/typings/server/core.server.d.ts"],
+      "rosing-core-client": ["build/typings/client/core.client.d.ts"]
+    },
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+//    "typeRoots": ["node_modules/@types", "./typings"],
+    "jsx": "react"
+  },
+  "include": [
+    "custom/*",
+    "../typings/*",
+    "../core/common/components/**/*"
+  ],
+  "files": [
+    "client/client.ts",
+    "server/server.ts"
+  ]
+}

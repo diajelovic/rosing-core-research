@@ -12,18 +12,15 @@ import customization from "custom";
 
 const app = express();
 const port = 3000;
-const templatePath = path.resolve(
-  __dirname,
-  "../../src/common/assets/server.ejs"
-);
+const templatePath = path.resolve(__dirname, "../assets/server.ejs");
 const fsReadFile = util.promisify(fs.readFile);
 
-const coreClientStats = require("../../lib/rosing-core-client/loadable-stats.json");
-const clientStats = require("../../build/client/loadable-stats.json");
+const coreClientStats = require("../../../build/rosing-core-client/loadable-stats.json");
+const clientStats = require("../../../build/client/loadable-stats.json");
 
 app.use(
   "/public",
-  express.static(path.resolve(__dirname, "../../build/client/public"))
+  express.static(path.resolve(__dirname, "../../../build/client/public"))
 );
 
 app.get("/", async (req, res) => {
@@ -34,8 +31,6 @@ app.get("/", async (req, res) => {
       }
     },
   });
-
-  console.debug("---coreClientStats", webStats);
 
   const webExtractor = new ChunkExtractor({ stats: webStats });
   const jsx = webExtractor.collectChunks(server(customization));

@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import { App } from "app/entrypoint";
+import { App } from "common/entrypoint/entrypoint";
 import {
   Customization,
   CustomizationContext,
-} from "utils/customization.context";
+} from "common/utils/customization.context";
 
 export const server = (customization: Customization) => {
   return (

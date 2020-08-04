@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import image from "./red.jpg";
-import { useCustomization } from "utils/customization.context";
+import { useCustomization } from "common/utils/customization.context";
 
 const Image = () => {
   const { imageUrl } = useCustomization();

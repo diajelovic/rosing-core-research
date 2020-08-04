@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
 
-import { App } from "app/entrypoint";
+import { App } from "common/entrypoint/entrypoint";
 import {
   Customization,
   CustomizationContext,
-} from "utils/customization.context";
+} from "common/utils/customization.context";
 
 export const client = (customization: Customization, domNodeId: string) => {
   ReactDom.hydrate(

@@ -2,19 +2,18 @@ const path = require("path");
 const LoadablePlugin = require("@loadable/webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const babelConfig = require("./core.client.babel.config.json");
-
-module.exports = {
+module.exports = (isDev) => ({
   entry: "./src/core/client/core.client",
   output: {
     chunkFilename: "chunks/[name].js",
-    path: path.resolve(__dirname, "../../../lib/rosing-core-client"),
+    path: path.resolve(__dirname, "../../../build/rosing-core-client"),
     publicPath: "/public/",
     filename: "index.js",
     library: "default",
     libraryTarget: "commonjs2",
   },
-  mode: "development",
+  mode: isDev ? "development" : "production",
+  watch: isDev,
   devtool: false,
   module: {
     rules: [
@@ -23,7 +22,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: babelConfig,
         },
       },
       {
@@ -55,9 +53,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".ts", ".tsx", ".css"],
     alias: {
-      app: path.resolve(__dirname, "../../common/app"),
-      utils: path.resolve(__dirname, "../../common/utils"),
-      components: path.resolve(__dirname, "../../common/components"),
+      common: path.resolve(__dirname, "../common"),
     },
   },
   plugins: [
@@ -67,4 +63,4 @@ module.exports = {
       chunkFilename: "css/[id].css",
     }),
   ],
-};
+});

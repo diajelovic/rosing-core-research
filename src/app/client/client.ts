@@ -7,4 +7,4 @@ loadableReady(() => {
   client(customization, "app");
 });
 
-// console.log(customization);
+console.log(customization);
